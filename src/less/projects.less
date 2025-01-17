@@ -1,0 +1,43 @@
+.projects{
+    text-align: left;
+}
+
+.project {
+    margin-bottom: 1rem;
+    &__header{
+        border-top: thin solid @accent;
+        margin-bottom: 1rem;
+        padding-bottom: .25rem;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        padding: 1rem 0;
+    }
+
+    &__tecnologies {
+        font-size: .75rem;
+        font-style: italic;
+    }
+
+    &__live-links {
+        padding-left: 0;
+        a {
+            background-color: @accent;
+            border-radius:1rem;
+            font-weight: bold;
+            padding: .75rem;
+            color: @primary-text;
+            text-decoration: none;
+            li {
+                margin-bottom: 0;        
+                list-style-type: none;
+            }
+        }
+    }
+}

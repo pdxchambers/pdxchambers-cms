@@ -1,0 +1,34 @@
+.NWSWidget{
+    display: none;   
+}
+
+@media(min-width: @screen-sm){
+    .NWSWidget{
+        &__conditions{
+            display: block;
+            border: thick solid @accent;
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            h2 {
+                text-align: center;
+                border-bottom: thin solid #fff;
+                color: @secondary-text;
+                padding-bottom: 0.5rem;
+            }
+            p {
+                line-height: .5;
+            }
+        }
+    }
+}
+
+@media(min-width: @screen-md){
+    .NWSWidget{
+        display: block;
+        &__curTemp{
+            font-size: 1.75rem;
+        }
+    }
+}

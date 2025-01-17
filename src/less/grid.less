@@ -1,0 +1,160 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    grid-area: header;
+    &__avatar{
+        grid-area: avatar;
+    }
+    &__logo{
+        grid-area: logo;
+    }
+    &__nav{
+        grid-area: nav;
+    }
+    &__widget{
+        grid-area: widget;
+    }
+}
+
+.content{
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "main"
+        "sidebar"
+        "secondary";
+    &__main{
+        grid-area: main;
+    }
+    &__secondary {
+        grid-area: secondary;
+    }
+    &__sidebar{
+        grid-area: sidebar;
+    }
+}
+
+.footer{
+    flex-shrink: 0;
+}
+
+.resume {
+    &__grid {
+        display: grid;
+        grid-template-areas:
+            "summary summary"
+            "intro intro"
+            "education education"
+            "military military"
+            "skills skills"
+            "history history"
+            "additional additional";
+    }
+    &__intro {
+        grid-area: intro;
+    }
+
+    &__summary{
+        grid-area: summary;
+    }
+
+    &__skills{
+        grid-area: skills;
+    }
+
+    &__education {
+        grid-area: education;
+    }
+
+    &__military {
+        grid-area: military;
+    }
+
+    &__history {
+        grid-area: history;
+    }
+
+    &__additional {
+        grid-area: additional;
+    }
+}
+
+.project {
+    &__live-links {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: @screen-sm){
+    .content{
+        grid-template-areas:
+            "main main sidebar"
+            "secondary secondary secondary";
+    }
+
+   .resume {
+        &__grid {
+            display: grid;
+            grid-template-areas:
+                "summary summary"
+                "intro intro"
+                "education military"
+                "skills skills"
+                "history history"
+                "additional additional";
+        }
+   }
+
+   .flexbox {
+        display: flex;
+        justify-content: space-between;
+        &--leadventure{
+            justify-content: space-around;
+            div {
+                width: 50%;
+               &:first-child{
+                    border-right: thin solid @accent;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: @screen-md){
+    .header {
+        display: grid;
+        grid-template-columns: .5fr 2fr .5fr;
+        grid-template-areas:
+            "avatar logo widget"
+            "nav nav nav";
+        justify-content: start;
+    }
+}
+
+@media(min-width: @screen-lg){
+    
+}
+
+@media(min-width: @screen-xl){
+
+}

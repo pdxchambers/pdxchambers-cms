@@ -1,0 +1,518 @@
+/* Importing Global Styles */
+@font-face {
+  font-family: "Oxygen";
+  src: url("../assets/fonts/Oxygen/Oxygen-Light.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+/*
+    Viewport Sizes
+*/
+body {
+  background-color: #EBF0F2;
+  background-image: url("src/assets/images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  color: #ADC8D9;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+li {
+  margin-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+.hidden {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  grid-area: header;
+}
+.header__avatar {
+  grid-area: avatar;
+}
+.header__logo {
+  grid-area: logo;
+}
+.header__nav {
+  grid-area: nav;
+}
+.header__widget {
+  grid-area: widget;
+}
+.content {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "main" "sidebar" "secondary";
+}
+.content__main {
+  grid-area: main;
+}
+.content__secondary {
+  grid-area: secondary;
+}
+.content__sidebar {
+  grid-area: sidebar;
+}
+.footer {
+  flex-shrink: 0;
+}
+.resume__grid {
+  display: grid;
+  grid-template-areas: "summary summary" "intro intro" "education education" "military military" "skills skills" "history history" "additional additional";
+}
+.resume__intro {
+  grid-area: intro;
+}
+.resume__summary {
+  grid-area: summary;
+}
+.resume__skills {
+  grid-area: skills;
+}
+.resume__education {
+  grid-area: education;
+}
+.resume__military {
+  grid-area: military;
+}
+.resume__history {
+  grid-area: history;
+}
+.resume__additional {
+  grid-area: additional;
+}
+.project__live-links {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .content {
+    grid-template-areas: "main main sidebar" "secondary secondary secondary";
+  }
+  .resume__grid {
+    display: grid;
+    grid-template-areas: "summary summary" "intro intro" "education military" "skills skills" "history history" "additional additional";
+  }
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flexbox--leadventure {
+    justify-content: space-around;
+  }
+  .flexbox--leadventure div {
+    width: 50%;
+  }
+  .flexbox--leadventure div:first-child {
+    border-right: thin solid #5b89a6;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-areas: "avatar logo widget" "nav nav nav";
+    justify-content: start;
+  }
+}
+/* Importing Components */
+.header {
+  padding: 1rem;
+}
+.header__avatar {
+  width: 15%;
+}
+.header__avatar img {
+  border-radius: 50%;
+  width: 100%;
+}
+.header__logo {
+  width: 50%;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__nav {
+  width: 25%;
+}
+.header__menu {
+  background-color: #32628C;
+  border-radius: 1rem;
+  position: absolute;
+  top: 60px;
+  right: 1rem;
+}
+.header__burger {
+  padding: 0 2rem;
+  width: 50%;
+}
+.header__burger button {
+  background-color: transparent;
+  border: none;
+  color: #5b89a6;
+  margin: 0 auto;
+  font-size: 24px;
+}
+.navigation {
+  font-size: 24px;
+  margin-right: 1rem;
+}
+.navigation__top-nav,
+.navigation__foot-nav {
+  padding-left: 0;
+}
+.navigation__top-nav {
+  padding: 0 1rem;
+}
+.navigation__foot-nav {
+  padding: 0;
+}
+.navigation__item {
+  list-style-type: none;
+}
+.navigation__item a {
+  color: #ADC8D9;
+  text-decoration: none;
+}
+.navigation__item--active a {
+  border-bottom: thin solid #ADC8D9;
+}
+.content {
+  padding: 1rem;
+  text-align: center;
+}
+.content__main {
+  width: 100%;
+}
+.content__secondary {
+  margin-top: 1rem;
+  width: 100%;
+}
+.content__image {
+  margin: 0 -1rem 1rem -1rem;
+  height: 300px;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+.content__image img {
+  width: 100%;
+}
+.content__title {
+  margin: 0 auto;
+  width: 80%;
+}
+.content__copy {
+  margin: 3rem auto 0 auto;
+  text-align: left;
+  width: 90%;
+}
+.content__cta {
+  background-color: rgba(91, 137, 166, 0.75);
+  border-radius: 1rem;
+  border: thin solid #5b89a6;
+  min-height: 100px;
+  margin-bottom: 1.5rem;
+}
+.content__cta a {
+  color: #ADC8D9;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+.content__cta a span {
+  display: block;
+  padding: 0.5rem;
+}
+.content__cta--treehouse {
+  background-image: url("src/assets/images/treehouse_logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content__cta--treehouse a span {
+  position: relative;
+  top: 65px;
+  display: block;
+  padding: 0.5rem;
+}
+.content__cta--github {
+  background-image: url("src/assets/images/logos/github/github-mark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content__cta--github a span {
+  position: relative;
+  top: 65px;
+  display: block;
+  padding: 0.5rem;
+}
+.resume {
+  /*
+    &__summary {
+        
+    }
+    
+    &__intro {
+        grid-area: intro;
+    }
+*/
+}
+.resume--copy {
+  text-align: left;
+}
+.resume--title {
+  border-bottom: thin solid #5b89a6;
+  padding-bottom: 0.25rem;
+}
+.resume__skills--skill {
+  font-size: 0.75rem;
+}
+.resume__education {
+  padding: 1rem;
+}
+.resume__education--title {
+  font-size: 1.25rem;
+}
+.resume__education--institution {
+  display: block;
+  font-weight: bold;
+}
+.resume__education--achievement {
+  display: block;
+  font-style: italic;
+}
+.resume__military {
+  padding: 1rem;
+}
+.resume__military--title {
+  font-size: 1.25rem;
+}
+.resume__military--institution {
+  display: block;
+  font-weight: bold;
+}
+.resume__military--achievement {
+  display: block;
+  font-style: italic;
+}
+.resume__history {
+  margin-top: 1rem;
+}
+.resume__history--description {
+  text-align: left;
+}
+.resume__history--job {
+  border-bottom: thin solid #5b89a6;
+  margin-bottom: 1rem;
+}
+.resume__additional--work {
+  text-align: left;
+}
+.about {
+  padding: 1rem;
+}
+.about img {
+  width: 100%;
+}
+.about__copy {
+  text-align: left;
+}
+.projects {
+  text-align: left;
+}
+.project {
+  margin-bottom: 1rem;
+}
+.project__header {
+  border-top: thin solid #5b89a6;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+}
+.project__image img {
+  width: 100%;
+}
+.project__description {
+  padding: 1rem 0;
+}
+.project__tecnologies {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+.project__live-links {
+  padding-left: 0;
+}
+.project__live-links a {
+  background-color: #5b89a6;
+  border-radius: 1rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  color: #ADC8D9;
+  text-decoration: none;
+}
+.project__live-links a li {
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.footer {
+  background-color: #32628C;
+  color: #EBF0F2;
+  padding: 1rem;
+  width: 100%;
+}
+.footer__copy {
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .header__menu {
+    top: 100px;
+    right: 1.8rem;
+  }
+  .header__burger {
+    text-align: right;
+  }
+  .content__main {
+    width: 100%;
+  }
+  .content__image img {
+    width: 95%;
+  }
+  .resume__skills--skill-block {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    width: 992px;
+    margin: 0 auto;
+  }
+  .header__avatar {
+    padding: 0 1rem;
+    width: 80%;
+  }
+  .header__logo {
+    padding: 0 1rem;
+    width: 70%;
+  }
+  .header__header-nav {
+    padding: 0 1rem;
+  }
+  .header__menu {
+    background-color: transparent;
+    position: static;
+    width: 992px;
+    margin: 0 auto;
+  }
+  .header__burger {
+    display: none;
+  }
+  .navigation__top-nav {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer__content {
+    margin: 0 auto;
+    width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    width: 992px;
+    margin: 0 auto;
+  }
+  .header {
+    margin: 0 auto;
+  }
+  .header__avatar {
+    padding: 0 1rem;
+    width: 80%;
+  }
+  .header__logo {
+    padding: 0 1rem;
+    width: 70%;
+  }
+  .header__header-nav {
+    padding: 0 1rem;
+  }
+  .content__cta {
+    margin-bottom: 5rem;
+  }
+  .content__cta--treehouse a {
+    font-size: 1.4rem;
+    text-align: center;
+    display: block;
+  }
+  .content__cta--treehouse a img {
+    max-width: 100%;
+  }
+}
+.NWSWidget {
+  display: none;
+}
+@media (min-width: 768px) {
+  .NWSWidget__conditions {
+    display: block;
+    border: thick solid #5b89a6;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  .NWSWidget__conditions h2 {
+    text-align: center;
+    border-bottom: thin solid #fff;
+    color: #403115;
+    padding-bottom: 0.5rem;
+  }
+  .NWSWidget__conditions p {
+    line-height: 0.5;
+  }
+}
+@media (min-width: 992px) {
+  .NWSWidget {
+    display: block;
+  }
+  .NWSWidget__curTemp {
+    font-size: 1.75rem;
+  }
+}
+/* Importing Media Queries */
