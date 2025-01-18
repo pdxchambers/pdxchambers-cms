@@ -1,11 +1,11 @@
 /* Importing Global Styles */
 @font-face {
   font-family: "Oxygen";
-  src: url("../assets/fonts/Oxygen/Oxygen-Light.ttf");
+  src: url("src/assets/fonts/Oxygen/Oxygen-Light.ttf");
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+  src: url("src/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
 }
 /*
     Viewport Sizes

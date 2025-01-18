@@ -24,3 +24,4 @@
 </footer>
 
 <script type="text/javascript" src="src/javascript/widgets/weather/weather.js"></script>
+<script type="text/javascript" src="src/javascript/stdlib.js"></script>
