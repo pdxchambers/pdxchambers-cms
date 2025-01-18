@@ -341,13 +341,13 @@ body {
 .resume__additional--work {
   text-align: left;
 }
-.about {
+.content__about {
   padding: 1rem;
 }
-.about img {
+.content__about img {
   width: 100%;
 }
-.about__copy {
+.content__about__copy {
   text-align: left;
 }
 .projects {
@@ -410,6 +410,15 @@ body {
   }
   .content__image img {
     width: 95%;
+  }
+  .content__image--about {
+    margin: 0 auto;
+  }
+  .content__image--about img {
+    width: 100%;
+  }
+  .content__about {
+    display: block;
   }
   .resume__skills--skill-block {
     width: 30%;
