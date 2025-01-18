@@ -10,7 +10,7 @@
                         </ul>
                     </div>
                     <div class="project__image">
-                        <img src="assets/images/feedback-app.png" alt="Housing Marketplace App">
+                        <img src="src/assets/images/feedback-app.png" alt="Housing Marketplace App">
                     </div>
                     <div class="project__description">
                         Allows users to leave comments and ratings. Part of the "React Front to Back" course on Udemy.
@@ -26,7 +26,7 @@
                         </ul>
                     </div>
                     <div class="project__image">
-                        <img src="assets/images/github-finder.png" alt="Housing Marketplace App">
+                        <img src="src/assets/images/github-finder.png" alt="Housing Marketplace App">
                     </div>
                     <div class="project__description">
                         Searches GitHub for user profiles. Part of the "React Front to Back" course on Udemy.
@@ -45,7 +45,7 @@
                         </ul>
                     </div>
                     <div class="project__image">
-                        <img src="assets/images/housing-marketplace.png" alt="Housing Marketplace App">
+                        <img src="src/assets/images/housing-marketplace.png" alt="Housing Marketplace App">
                     </div>
                     <div class="project__description">
                         Browse and create real estate listings. Part of the "React Front to Back" course on Udemy.
@@ -65,7 +65,7 @@
                         <span></span>
                     </div>
                     <div class="project__image">
-                        <img src="assets/images/haystack-rock.jpg" alt="Housing Marketplace App">
+                        <img src="src/assets/images/haystack-rock.jpg" alt="Housing Marketplace App">
                     </div>
                     <div class="project__description">
                         Simple support ticketing system. Part of the "React Front to Back" course on Udemy.
