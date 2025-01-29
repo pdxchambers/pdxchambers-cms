@@ -1,7 +1,5 @@
-<section id="content" class="about content__about">
-    <div class="content__image content__image--about">
-        <img src="src/assets/images/portland_zen.jpg" alt="Zen Garden, Japanese Gardens, Portland, Oregon">
-    </div>            
+<section id="content" class="content about content__about">
+    <div class="content__image content__image--about"><span class="hidden">Japanese Garden, Portland, Oregon</span></div>            
     <h2 id="home-title" class="about__title">About me:</h2>
     <div class="about__copy">
         <p>
@@ -17,7 +15,7 @@
         </p>
 
         <p>
-            In 2009, I started exploring web development as a hobby, focusing on WordPress. I spent several years experimenting with templates 
+            I started exploring web development as a hobby, focusing on WordPress. I spent several years experimenting with templates 
             and plugins, taking on projects for friends and family along the way. By late 2016, I realized it was time to pursue programming 
             more seriously and began searching for entry-level roles. In December 2017, I joined Dealer Spike as a Support Agent.
         </p>
