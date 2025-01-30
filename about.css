@@ -1,0 +1,9 @@
+.about {
+  padding: 1rem;
+}
+.about img {
+  width: 100%;
+}
+.about__copy {
+  text-align: left;
+}

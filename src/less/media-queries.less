@@ -1,0 +1,124 @@
+@media(min-width: @screen-sm){
+    .header {
+        &__menu{
+
+            top: 100px;
+            right: 1.8rem;
+        }
+        &__burger{
+            text-align: right;
+        }
+    }
+
+    .content {
+        &__main{
+            width: 100%;
+        }
+
+        &__image {
+            img {
+                width:95%;
+            }
+            &--about{
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__about{
+            display: block;
+        }
+        &__cta{
+            margin-bottom: 5rem;
+            &--treehouse{
+                a {
+                    text-align: center;
+                    display: block;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .resume {
+        &__skills {
+            &--skill-block {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media(min-width: @screen-md){
+    .header {
+        width: 992px;
+        margin: 0 auto;
+        &__avatar{
+            padding: 0 1rem;
+            width: 80%;
+        }
+        &__logo{
+            padding: 0 1rem;
+            width: 70%;
+        }
+        &__header-nav {
+            padding: 0 1rem;
+        }
+        &__menu{
+            background-color: transparent;
+            position: static;
+            width: 992px;
+            margin: 0 auto;
+        }
+        &__burger{
+            display: none;
+        }
+    }
+
+    .navigation {
+        &__top-nav {
+            display: flex;
+            font-size: 20px;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        &__content{
+            margin: 0 auto;
+            width: 992px;
+        }
+    }
+}
+
+@media(min-width: @screen-lg){
+    .content {
+        width: 992px;
+        margin: 0 auto;
+    }
+    .header {
+        margin: 0 auto;
+        &__avatar{
+            padding: 0 1rem;
+            width: 80%;
+        }
+        &__logo{
+            padding: 0 1rem;
+            width: 70%;
+        }
+        &__header-nav {
+            padding: 0 1rem;
+        }
+    }
+}
+
+@media(min-width: @screen-xl){
+
+}

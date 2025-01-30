@@ -1,0 +1,26 @@
+.navigation {
+    font-size: 24px;
+    margin-right: 1rem;
+    &__top-nav, &__foot-nav{
+        padding-left: 0;
+    }
+    &__top-nav {
+        padding: 0 1rem;
+    }
+    &__foot-nav {
+        padding: 0;
+    }
+    &__item {
+        list-style-type: none;
+        a {
+            color: @primary-text;
+            text-decoration: none;
+        }  
+        &--active{
+            a {
+                border-bottom: thin solid @primary-text;
+            }
+        }         
+    }
+    
+}

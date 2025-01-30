@@ -1,0 +1,77 @@
+.content {
+    padding: 1rem;
+    text-align: center;
+    &__main{
+        width: 100%;
+    }
+    &__secondary {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    &__image{
+        margin: 0 -1rem 1rem -1rem;
+        height: 300px;
+        padding: 0 1rem;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    &__title{
+        margin: 0 auto;
+        width: 80%;
+    }
+    &__copy {
+        margin: 3rem auto 0 auto;
+        text-align: left;
+        width: 90%;
+    }
+    &__cta{
+        background-color: @cta-background;
+        border-radius: 1rem;
+        border: thin solid @accent;
+        min-height: 100px;
+        margin-bottom: 1.5rem;
+        a {
+            color: @primary-text;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            span {
+                display: block;
+                padding: .5rem;
+            }
+        }
+        &--treehouse{
+            background-image: url("src/assets/images/treehouse_logo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            a {
+                span {
+                    position: relative;
+                    top: 65px;
+                    display: block;
+                    padding: .5rem;
+                }
+            }
+        }
+        &--github{
+            background-image: url("src/assets/images/logos/github/github-mark.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            a {
+                span {
+                    position: relative;
+                    top: 65px;
+                    display: block;
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+    
+}

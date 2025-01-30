@@ -1,0 +1,75 @@
+.resume {
+    &--copy{
+        text-align: left;
+    }
+    
+    &--title {
+        border-bottom: thin solid @accent;
+        padding-bottom: .25rem;
+    }
+    /*
+    &__summary {
+        
+    }
+    
+    &__intro {
+        grid-area: intro;
+    }
+*/
+    &__skills{
+        &--skill {
+            font-size: .75rem;
+        }
+    }
+
+    &__education {
+        padding: 1rem;
+        &--title{
+            font-size: 1.25rem;
+        }
+
+        &--institution {
+            display: block;
+            font-weight: bold;
+        }
+
+        &--achievement {
+            display: block;
+            font-style: italic;
+        }
+    }
+
+    &__military {
+        padding: 1rem;
+        &--title{
+            font-size: 1.25rem;
+        }
+
+        &--institution {
+            display: block;
+            font-weight: bold;
+        }
+
+        &--achievement {
+            display: block;
+            font-style: italic;
+        }
+    }
+
+    &__history {
+        margin-top: 1rem;
+        &--description{
+           text-align: left;
+        }
+        &--job {
+            border-bottom: thin solid @accent;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__additional {
+        &--work {
+            text-align: left;
+        }
+    }
+}
